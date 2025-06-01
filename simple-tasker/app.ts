@@ -7,7 +7,7 @@ const taskList = document.getElementById('task-list') as HTMLUListElement;
 function addTask() {
   const taskText = taskInput.value.trim();
   if (!taskText) {
-    alert('할 일을 입력해주세요!');
+    alert('할 일을 입력해주세요! 😊');
     return;
   }
 
@@ -45,6 +45,9 @@ function addTask() {
   // 입력창 초기화 및 포커스 유지
   taskInput.value = '';
   taskInput.focus();
+
+  // 할 일 추가 성공 알림
+  alert(`"${taskText}" 할 일이 추가되었습니다! ✨`);
 }
 
 // 버튼 클릭 이벤트
