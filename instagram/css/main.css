@@ -1,0 +1,21 @@
+body { 
+  background-color: #fafafa;
+}
+
+#container_main{
+   margin: 0px auto;
+   display: flex;
+}
+
+.left_side{
+   width: 16dvw;
+   height: 100dvh;
+   position: sticky;
+   top: 0px;
+   display: flex;
+   border-right: solid 1px lightgray;
+   padding: 10px;
+   flex-direction: column; 
+   padding-bottom: 20px;
+   justify-content: space-around;
+}
