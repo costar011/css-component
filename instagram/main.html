@@ -4,63 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instagram Main Page</title>
-    <link rel="stylesheet" href="styles.css">
-    <script type="module" src="icons.js"></script>
-</head> 
-
+    <!-- CSS 파일 분리 -->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
 <body>
     <div id="container_main">
-        <!-- 왼쪽 사이드 메뉴  -->
+        <!-- 왼쪽 사이드 메뉴 -->
         <aside class="left_side">
-            <div id="logo_box">
-                <a href="main.html">
-                    <div id="instagram-logo"></div>
-                </a>
-            </div>
-     
-            <nav class="left_navi">
-                <ul>
-                    <li><a href="#" data-icon="home"><span>홈</span></a></li>
-                    <li><a href="#" data-icon="search"><span>검색</span></a></li>
-                    <li><a href="#" data-icon="explore"><span>탐색 탭</span></a></li>
-                    <li><a href="#" data-icon="reels"><span>릴스</span></a></li>
-                    <li><a href="#" data-icon="message"><span>메시지</span></a></li>
-                    <li><a href="#" data-icon="notification"><span>알림</span></a></li>
-                    <li><a href="#" data-icon="create"><span>만들기</span></a></li>
-                    <li><a href="user_page.html"><span>프로필</span></a></li>
-                </ul>
-            </nav>
-
-            <nav class="left_navi2">
-                <ul>
-                    <li><a href="#" data-icon="menu"><span>더보기</span></a></li>
-                </ul>
-            </nav>
+            <!-- ... (사이드 메뉴 구조, SVG 아이콘 등) ... -->
         </aside>
 
-        <!-- 메인 페이지  -->
-        <main id="container">
+        <!-- 메인 컨텐츠 영역 -->
+        <div id="container">
             <article id="container_content">
                 <header class="header">
-                    <div class="story"></div>
+                    <!-- 스토리 리스트 -->
+                    <!-- ... (스토리 구조) ... -->
                 </header>
+
+                <!-- 피드(게시글) 반복 -->
+                <section class="content">
+                    <div class="feed">
+                        <!-- 게시글 상단(프로필/위치/옵션) -->
+                        <!-- 게시글 이미지 -->
+                        <!-- 좋아요/댓글/공유/저장 버튼 -->
+                        <!-- 좋아요 수 -->
+                        <!-- 게시글 텍스트 -->
+                        <!-- 댓글 보기/작성 -->
+                    </div>
+                </section>
+                <!-- ... (다른 게시글 section 반복) ... -->
             </article>
-        </main>
+
+            <!-- 오른쪽 추천 및 정보 영역 -->
+            <aside class="right_side">
+                <!-- ... (프로필, 추천친구, 정보 등) ... -->
+            </aside>
+        </div>
     </div>
-
-    <script>
-        // 아이콘 삽입
-        document.addEventListener('DOMContentLoaded', () => {
-            const logoContainer = document.getElementById('instagram-logo');
-            logoContainer.innerHTML = icons.instagram;
-
-            document.querySelectorAll('[data-icon]').forEach(element => {
-                const iconName = element.getAttribute('data-icon');
-                const icon = document.createElement('div');
-                icon.innerHTML = icons[iconName];
-                element.insertBefore(icon, element.firstChild);
-            });
-        });
-    </script>
 </body>
 </html>
