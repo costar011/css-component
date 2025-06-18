@@ -1,98 +1,75 @@
-/* 기본 스타일 */
 body { 
     background-color: #fafafa;
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-}
-
-/* 메인 컨테이너 */
-#container_main {
-    display: flex;
-    min-height: 100vh;
-}
-
-/* 왼쪽 사이드바 */
-.left_side {
-    width: 244px;
-    height: 100vh;
-    position: sticky;
-    top: 0;
-    border-right: 1px solid #dbdbdb;
-    padding: 8px 12px 20px;
-    display: flex;
-    flex-direction: column;
-}
-
-/* 로고 영역 */
-#logo_box {
-    padding: 25px 12px 16px;
-}
-
-#logo_box a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-}
-
-/* 네비게이션 메뉴 */
-.left_navi, .left_navi2 {
-    margin-top: 8px;
-}
-
-.left_navi ul, .left_navi2 ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.left_navi li, .left_navi2 li {
-    margin: 4px 0;
-}
-
-.left_navi a, .left_navi2 a {
-    display: flex;
-    align-items: center;
-    padding: 12px;
-    text-decoration: none;
-    color: #262626;
-    border-radius: 8px;
-    transition: background-color 0.2s;
-}
-
-.left_navi a:hover, .left_navi2 a:hover {
-    background-color: #f2f2f2;
-}
-
-.navi_icon {
-    margin-right: 16px;
-    color: #262626;
-}
-
-/* 메인 컨텐츠 영역 */
-#container {
-    flex: 1;
-    max-width: 935px;
-    margin: 0 auto;
-    padding: 30px 20px 0;
-}
-
-#container_content {
-    width: 100%;
-    max-width: 630px;
-    margin: 0 auto;
-}
-
-.header {
-    width: 100%;
-    margin-bottom: 24px;
-}
-
-.story {
-    height: 118px;
-    border: 1px solid #dbdbdb;
-    border-radius: 8px;
-    padding: 16px 0;
-    margin-bottom: 24px;
-    overflow-x: auto;
-    background-color: #fff;
-}
+ }
+ 
+ #container_main{
+     margin: 0px auto;
+     display: flex;
+ }
+ 
+ .left_side{
+     width: 16dvw;
+     height: 100dvh;
+     position: sticky;
+     top: 0px;
+     display: flex;
+     border-right: solid 1px lightgray;
+     padding: 10px;
+     flex-direction: column; 
+     padding-bottom: 20px;
+     justify-content: space-around;
+ }
+ 
+ #container{
+     display:flex;
+     margin: 10px auto;
+     justify-content: center;
+ }
+ 
+ #container_content{
+     width:630px;
+     padding: 10px 10px 0px 10px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     font-family: sans-serif;
+ }
+ 
+ .header{
+     width:100%;
+ }
+ 
+ .content{
+     width:80%;
+     border-bottom: solid 1px  lightgray;
+     display:block;
+     margin-bottom: 20px;
+ }
+ 
+ .right_side{
+     display: block;
+     padding-left: 60px;
+     width: 320px;
+     height: 30%;
+ }
+ 
+ /* 화면 크기에 따른 메뉴 조절 */
+ @media screen and (max-width:1260px){
+     .left_side{
+         width: 5dvw;
+     }
+ }
+ @media screen and (max-width:1160px){
+     .left_side{
+         width: 5dvw;
+     }
+     .right_side{
+         display: none;
+     }
+ }
+ 
+ @media screen and (max-width:760px){
+     .left_side{
+         display: none;
+     }
+ }
