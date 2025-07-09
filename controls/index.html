@@ -16,6 +16,9 @@
   </head>
   <body>
     <div class="textbox">
+      <input oninput="handleChange(event)" onkeydown="handleStartTyping()" autocomplete="off" id="input" type="text" />
+      <span class="icon visible material-symbols-outlined">account_circle</span>
+      <label htmlFor="input">Username</label>
       <span class="spinner"></span>
     </div>
     <button disabled>
