@@ -1,0 +1,29 @@
+body {
+ margin: 0;
+ height: 100vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+ background: #1c1c1c;
+ overflow: hidden;
+ font-family: "Euclid Circular A", "Poppins";
+}
+
+* {
+ box-sizing: border-box;
+}
+
+.textbox {
+ position: relative;
+ margin-bottom: 16px;
+}
+
+.textbox :is(label, span) {
+ position: absolute;
+ top: 50%;
+ translate: 0 -50%;
+ pointer-events: none;
+ color: #888888;
+ transition: 0.3s;
+}
