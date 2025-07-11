@@ -27,3 +27,52 @@ body {
  color: #888888;
  transition: 0.3s;
 }
+
+.textbox > label {
+ left: 44px;
+ translate: 0 -50%;
+ padding: 4px 8px;
+}
+
+.textbox > .icon {
+ z-index: 2;
+ left: 16px;
+ font-size: 26px;
+}
+
+.textbox > input {
+ height: 56px;
+ width: 240px;
+ padding-left: 48px;
+ border: 2px solid #292929;
+ border-radius: 8px;
+ outline: none;
+ background: transparent;
+ color: #f9f9f9;
+ font-family: inherit;
+ font-size: 16px;
+ transition: 0.3s;
+}
+
+.textbox > input.valid.has-value {
+ border-color: #14ca99;
+}
+
+.textbox > :is(input:focus, .has-value) {
+ border-color: #d3d3d3;
+}
+
+.textbox > input.has-value {
+ border-color: #ff5360;
+}
+
+.textbox > :is(input:focus, .has-value) ~ span {
+ color: #f9f9f9;
+}
+
+.textbox > :is(input:focus, .has-value) ~ label {
+ background: #1c1c1c;
+ color: rgba(255, 255, 255, 0.75);
+ translate: -42px -42px;
+ scale: 0.8;
+}
