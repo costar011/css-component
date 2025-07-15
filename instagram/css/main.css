@@ -1,4 +1,3 @@
-
 body { 
     background-color: #fafafa;
  }
@@ -58,5 +57,19 @@ body {
  @media screen and (max-width:1260px){
      .left_side{
          width: 5dvw;
+     }
+ }
+ @media screen and (max-width:1160px){
+     .left_side{
+         width: 5dvw;
+     }
+     .right_side{
+         display: none;
+     }
+ }
+ 
+ @media screen and (max-width:760px){
+     .left_side{
+         display: none;
      }
  }
