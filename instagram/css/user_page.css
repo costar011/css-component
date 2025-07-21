@@ -1,0 +1,70 @@
+/* 왼쪽 메뉴 프로필 메뉴만 굵게  */
+
+#user_container{
+ margin: 0 auto;
+}
+
+.user_content_box{
+ width: 975px;
+ padding: 30px 20px 0;
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+}
+
+.user_header{
+ width: 975px;
+ display: flex;
+ flex-direction: row;
+ margin-bottom: 10px;
+}
+
+.user_top{
+ width:290px;
+ height: 200px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.user_img{
+ width: 150px;
+ height: 150px;
+ border-radius: 50%;
+}
+
+.user_info_box{
+ width: 610px;
+ height: 40px;
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ justify-content: flex-start;
+}
+
+.user_section{
+ display: flex;
+ flex-direction: column;
+}
+
+.user_name{
+ display: flex;
+ justify-content: flex-start;
+}
+
+.user_name>h2{
+ margin:0;
+ font-size: 20px;
+ font-weight: lighter;
+}
+
+.profile_modify, .archive_story{
+ display: flex;
+ align-items: center;
+ height: 30px;
+ font-size:15px;
+ padding: 0 10px;
+ margin:0 8px;
+ border-radius: 5px;
+ background-color: #efefef;
+}
