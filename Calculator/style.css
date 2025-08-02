@@ -37,3 +37,14 @@ body {
  color: #fff;
  text-align: center;
 }
+
+.display .display-input::placeholder {
+ color: #fff;
+}
+
+.display .display-result {
+ position: absolute;
+ left: 0;
+ font-size: 15px;
+ transform: translateY(65%);
+}
