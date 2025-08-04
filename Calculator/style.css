@@ -82,3 +82,15 @@ body {
  border: 2px solid #0ef;
  border-left-color: transparent;
 }
+
+.buttons .operator span::before {
+ content: '';
+ position: absolute;
+ left: -8px;
+ width: 12px;
+ height: 12px;
+ 
+ border-left: 2px solid #0ef;
+ border-bottom: 2px solid #0ef;
+ transform: rotate(45deg);
+}
