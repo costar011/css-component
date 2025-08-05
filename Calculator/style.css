@@ -81,6 +81,7 @@ body {
 
  border: 2px solid #0ef;
  border-left-color: transparent;
+ transform: translate(-35%, 50%) scale(.9);
 }
 
 .buttons .operator span::before {
@@ -93,4 +94,10 @@ body {
  border-left: 2px solid #0ef;
  border-bottom: 2px solid #0ef;
  transform: rotate(45deg);
+}
+.buttons .operator span::after {
+ content: 'x';
+ padding: 1px;
+ font-size: 18px;
+ line-height: 1;
 }
