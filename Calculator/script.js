@@ -8,3 +8,9 @@ let input = "",
     reslut = "";
 
 // main function to handle calculator Logic
+const calculator = (btnValue) => {
+
+  input += btnValue;
+
+  // update display
+}
