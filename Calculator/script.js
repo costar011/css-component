@@ -5,7 +5,7 @@ const displayBox = document.querySelector(".display"),
       operators = ["%", "÷", "x", "-", "+"];
 
 let input = "",
-    reslut = "";
+    result = "";
 
 // main function to handle calculator Logic
 const calculator = (btnValue) => {
@@ -13,4 +13,12 @@ const calculator = (btnValue) => {
   input += btnValue;
 
   // update display
+  displayInput.value = input; 
+  displayResult.value = result;
+  displayInput.scrollLeft = displayInput.scrollWidth;
 }
+
+// add click event listeners to all buttons
+buttons.forEach(button =>
+  button.addEventListener("click", e => calculate(e.target.textContent))
+);
