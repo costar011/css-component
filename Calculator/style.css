@@ -42,6 +42,11 @@ body {
  color: #fff;
 }
 
+.display.active .display-input {
+ font-size: 15px;
+ color: rgba(255, 255, 255, .3);
+}
+
 .display .display-result {
  position: absolute;
  left: 0;

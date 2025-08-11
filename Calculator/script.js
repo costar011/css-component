@@ -19,6 +19,7 @@ const calculator = (btnValue) => {
     catch {
       result = "Error";
     }
+    displayBox.classList.add("active");
   }
 
   input += btnValue;
