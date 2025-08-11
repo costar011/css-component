@@ -10,6 +10,17 @@ let input = "",
 // main function to handle calculator Logic
 const calculator = (btnValue) => {
 
+  // handle equals
+  if (btnValue === "=") {
+    try {
+      const calculatedValue = eval(input);
+      result = calculatedValue;
+    }
+    catch {
+      result = "Error";
+    }
+  }
+
   input += btnValue;
 
   // update display
