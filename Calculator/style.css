@@ -81,37 +81,3 @@ body {
  cursor: pointer;
  box-shadow: -3 -3 15px rgba(255, 255, 255, .1), 3px 3px 5px rgba(255, 255, 255, .6)
 }
-
-.buttons .operator {
- position: relative; 
- color: #0ef;
-}
-
-.buttons .operator span {
- display: flex;
- align-items: center;
- width: 22px;
- height: 20px;
-
- border: 2px solid #0ef;
- border-left-color: transparent;
- transform: translate(-35%, 50%) scale(.9);
-}
-
-.buttons .operator span::before {
- content: '';
- position: absolute;
- left: -8px;
- width: 12px;
- height: 12px;
- 
- border-left: 2px solid #0ef;
- border-bottom: 2px solid #0ef;
- transform: rotate(45deg);
-}
-.buttons .operator span::after {
- content: 'x';
- padding: 1px;
- font-size: 18px;
- line-height: 1;
-}
