@@ -3,37 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calculator Using HTML CSS & Javascript</title>
+    <title>Neumorphic Calculator</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="calculator">
       <div class="display">
-        <input type="text" class="display-input" placeholder="0" />
-        <input type="text" class="display-result" />
+        <span id="display">0</span>
       </div>
 
       <div class="buttons">
-        <button class="operator">C</button>
-        <button class="operator">( )</button>
-        <button class="operator">%</button>
-        <button class="operator"><span>&divide;</span></button>
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button class="operator"><span>&times;</span></button>
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button class="operator"><span>-</span></button>
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button class="operator"><span>+</span></button>
-        <button>0</button>
-        <button>.</button>
-        <button class="operator backspace"><span></span></button>
-        <button class="operator"><span>=</span></button>
+        <button class="operator" data-value="AC">C</button>
+        <button class="operator" data-value="()">()</button>
+        <button class="operator" data-value="%">%</button>
+        <button class="operator" data-value="÷">÷</button>
+
+        <button class="number" data-value="7">7</button>
+        <button class="number" data-value="8">8</button>
+        <button class="number" data-value="9">9</button>
+        <button class="operator" data-value="×">×</button>
+
+        <button class="number" data-value="4">4</button>
+        <button class="number" data-value="5">5</button>
+        <button class="number" data-value="6">6</button>
+        <button class="operator" data-value="-">-</button>
+
+        <button class="number" data-value="1">1</button>
+        <button class="number" data-value="2">2</button>
+        <button class="number" data-value="3">3</button>
+        <button class="operator" data-value="+">+</button>
+
+        <button class="number" data-value="0">0</button>
+        <button class="number" data-value=".">.</button>
+        <button class="operator backspace" data-value="backspace">
+          <svg
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M21 4H8l-7 8 7 8h13a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z"></path>
+            <line x1="18" y1="9" x2="12" y2="15"></line>
+            <line x1="12" y1="9" x2="18" y2="15"></line>
+          </svg>
+        </button>
+        <button class="operator equals" data-value="=">=</button>
       </div>
     </div>
     <script src="script.js"></script>
