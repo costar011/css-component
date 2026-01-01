@@ -10,6 +10,7 @@
  display: flex;
  perspective: 1000px;
  background-color: #4caf5042;
+ perspective-origin: center -200px;
 }
 
 .tree {
@@ -22,6 +23,17 @@
  display: flex;
  align-items: center;
  justify-content: center;
+ animation: 10s rotate infinite linear;
+}
+
+@keyframes rotate {
+ from {
+  transform: rotateX(0deg) rotateY(0deg);
+ }
+ to {
+  transform: rotateX(0deg) rotateY(360deg);
+ }
+ 
 }
 
 .leaf {
@@ -157,4 +169,12 @@
 
 h1 {
  font-weight: bolder;
+ font-size: 2rem;
+ position: absolute;
+ transform: translateX(-50%) translateY(0%);
+ top: -140px;
+ left: 50%;
+ text-align: center;
+ font-family: sans-serif;
+ color: rgba(0, 128, 0, 0.535);
 }
