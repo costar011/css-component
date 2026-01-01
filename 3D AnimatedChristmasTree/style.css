@@ -34,6 +34,29 @@
  position: absolute;
  transform-origin: left;
  transform: translateX(50%) rotateY(var(--deg));
+ clip-path: polygon(
+  0% 0%,
+  20% 10%,
+  5% 10%,
+  30% 20%,
+  5% 20%,
+  40% 30%,
+  5% 30%,
+  50% 40%,
+  5% 40%,
+  60% 50%,
+  5% 50%,
+  70% 60%,
+  5% 60%,
+  80% 70%,
+  5% 70%,
+  90% 80%,
+  5% 80%,
+  100% 90%,
+  5% 90%,
+  100% 100%,
+  0% 100%
+ );
 }
 
 .trunk {
@@ -69,6 +92,18 @@
  background-color: yellow;
  top: -40px;
  transform: rotateY(var(--deg));
+ clip-path: polygon(
+  50% 0%,
+  61% 35%,
+  98% 35%,
+  68% 57%,
+  79% 91%,
+  50% 70%,
+  21% 91%,
+  32% 57%,
+  2% 35%,
+  39% 35%
+ );
 }
 
 .decoration {
@@ -94,4 +129,32 @@
  width: 20px;
  height: 20px;
  background-color: red;
+ position: absolute;
+ border-radius: 100%;
+ transform: rotateX(-45deg);
+ top: 0%;
+ clip-path: polygon(
+  50% 0%,
+  61% 35%,
+  98% 35%,
+  68% 57%,
+  79% 91%,
+  50% 70%,
+  21% 91%,
+  32% 57%,
+  2% 35%,
+  39% 35%
+ );
+}
+
+.decoration:nth-child(even) {
+  transform: rotateX(90deg) rotateZ(180deg);
+}
+
+.decoration::after {
+ top: 80%;
+}
+
+h1 {
+ font-weight: bolder;
 }
